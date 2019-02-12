@@ -1,0 +1,14 @@
+.sticky {
+  width: 100%;
+  height:80px;
+  padding-top: -5px;
+  padding-left:30px;
+
+  position: fixed;
+  position: -webkit-sticky;
+  z-index: 5;
+}
+.font{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}

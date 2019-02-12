@@ -1,0 +1,13 @@
+<app-menu></app-menu>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<ng-container *ngFor="let customer of fileUploads">
+				<div class="col-md-3">
+					<img [src]="customer.url" alt="name" height="200" width="250"/>
+				</div>
+			</ng-container>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

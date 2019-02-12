@@ -1,0 +1,29 @@
+ <div id="wrapper"  [ngClass]="ref.click === true? 'toggled' :''" >
+        <div class="overlay" [ngStyle]="{disply:ref.click === true? 'block' :'none'}" ></div>
+
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+              <li class="sidebar-brand font1"routerLinkActive="active"><a [routerLink]="['#']">STC Home Decor</a></li>
+              <li routerLinkActive="active"><a [routerLink]="['/home']">Home</a></li>
+              <li routerLinkActive="active"><a [routerLink]="['/product']">Products</a></li>
+              <li routerLinkActive="active"><a [routerLink]="['/about']">About Us</a></li>
+              <li routerLinkActive="active"><a [routerLink]="['/contact']">Contact</a></li>
+              <li routerLinkActive="active"><a [routerLink]="['/Login']">Login</a></li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button appSidebar  #ref="appSidebar" type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <span class="hamb-top" style="background-color:white"></span>
+    			<span class="hamb-middle" style="background-color:white"></span>
+				<span class="hamb-bottom" style="background-color:white"></span>
+            </button>
+
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->

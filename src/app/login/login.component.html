@@ -1,0 +1,32 @@
+<app-menu></app-menu>
+<br><br><br><br><br><br><br><br>
+<h1 style="padding-left:600px;">Login</h1>
+<div style="padding-left:400px;"class="main row contact-wrap">
+                <div class="main status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input  class="form-control"type="email" placeholder="Username" #userName required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Password *</label>
+                            <input  type="email" placeholder="Password" #userPassword required class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-lg btn-primary btn-block" (click)="authService.SignIn(userName.value, userPassword.value)">Login</button>
+                        </div>
+                      </div>
+
+                </form>
+            </div><!--/.row-->
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-spin-clockwise">
+ <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+
