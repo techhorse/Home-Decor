@@ -9,6 +9,7 @@ import { AngularFireObject, AngularFireList, AngularFireDatabase } from 'angular
 import {AngularFireStorage,AngularFireStorageReference,AngularFireUploadTask} from 'angularfire2/storage';
 import {FormGroup, FormsModule,ReactiveFormsModule,FormBuilder} from '@angular/forms';
 import {map} from 'rxjs/operators';
+import {ImageZoomModule} from 'angular2-image-zoom';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',

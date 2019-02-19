@@ -48,25 +48,7 @@
     transition: all 0.3s ease 0s;
 }
 .owl-theme .owl-controls .owl-page.active span{ background: #ffc33c;}
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 120%;
-    margin-left:-50px;
-    padding-left:-200px;
 
-  }
-}
 .inline{
   display:inline-block;
   padding-left:50px;
